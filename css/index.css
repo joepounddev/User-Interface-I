@@ -120,9 +120,10 @@ img {
 }
 
 .footer__text__nav-menu__item {
+    /* width: 15%; */
     font-size: 1.6rem;
     color: var(--footer-link-font-color);
-    margin: 10px;
+    margin: 10px 2% 10px;
 }
 
 .footer__text__nav-menu__item:first-child {
@@ -188,9 +189,13 @@ img {
 }
 
 @media (max-width: 500px) {
+    /* Top nav styles */
+
     .top-nav__menu__item {
         width: 25%;
     }
+
+    /* Home page styles */
 
     .home__header-image {
         margin-top: 50px;
