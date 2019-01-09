@@ -142,18 +142,42 @@ img {
     padding: 20px 0;
 }
 
-/* Home page styles */
+/* Common page styles */
 
-.home__intro__heading, .home__featured__text__heading, .home__contact__heading {
+.home__intro__heading, .home__featured__text__heading, .home__contact__heading,
+.about__intro__heading, .about__how-we-bake__text__heading, .about__our-bakers__bakers-info__text__heading {
     font-family: var(--heading-font-family);
     font-size: 3rem;
     padding: 0 10px;
     margin-bottom: 0;
 }
 
-.home__intro {
+.home__featured, .about__our-bakers__bakers-info {
+    display: flex;
     width: 100%;
-    margin-top: 20px;
+}
+
+.home__featured > *, .about__our-bakers__bakers-info > * {
+    margin: 20px;
+}
+
+.home__featured__image, .about__our-bakers__bakers-info__image {
+    width: 55%;
+}
+
+.home__featured__text, .about__our-bakers__bakers-info__text {
+    width: 40%;
+}
+
+.home__featured__text > *, .about__our-bakers__bakers-info__text > * {
+    width: 100%;
+    padding-right: 4.5%;
+}
+
+/* Home page styles */
+
+.home__header-image {
+    margin-bottom: 20px;
 }
 
 .home__featured {
@@ -193,6 +217,34 @@ img {
     line-height: 2;
 }
 
+/* About page styles */
+
+.about__header-image {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.about__intro {
+    width: 100%;
+    margin: 25px auto 50px
+}
+
+.about__how-we-bake {
+    margin: 25px auto;
+}
+
+.about__how-we-bake__image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about__our-bakers__heading {
+    font-family: var(--heading-font-family);
+    font-size: 4.5rem;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 500px) {
     /* Top nav styles */
 
@@ -200,15 +252,17 @@ img {
         width: 25%;
     }
 
-    /* Home page styles */
+    /* Common page styles */
 
-    .home__header-image {
+    .home__header-image, .about__header-image {
         margin-top: 50px;
     }
 
-    .home__intro {
+    .home__intro, .about__intro {
         margin-bottom: 50px;
     }
+
+    /* Home page styles */
 
     .home__featured {
         flex-direction:  column;
