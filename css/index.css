@@ -60,18 +60,22 @@ img {
 
 .top-nav__menu__item {
     display: inline-block;
+    width: 15%;
+    text-align: center;
+    margin: 0 2%;
 }
 
 .top-nav__menu__item > a {
     display: inline-block;
+    width: 100%;
     background-color: var(--top-nav-link-bg-color);
     font-size: 1.6rem;
     color: var(--top-nav-link-font-color);
     text-decoration: none;
-    padding: 20px;
+    padding: 20px 1%;
     border: 1px solid var(--top-nav-link-border-color);
     border-radius: 20px;
-    margin: 0 10px 20px;
+    margin-bottom: 20px;
 }
 
 .top-nav__menu__item > a:hover {
@@ -184,6 +188,10 @@ img {
 }
 
 @media (max-width: 500px) {
+    .top-nav__menu__item {
+        width: 25%;
+    }
+
     .home__header-image {
         margin-top: 50px;
     }
