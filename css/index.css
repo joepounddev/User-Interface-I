@@ -117,17 +117,14 @@ img {
 
 .footer__text__nav-menu {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .footer__text__nav-menu__item {
-    /* width: 15%; */
     font-size: 1.6rem;
     color: var(--footer-link-font-color);
-    margin: 10px 2% 10px;
-}
-
-.footer__text__nav-menu__item:first-child {
-    margin-left: 0;
+    text-decoration-skip-ink: none;
+    margin: 10px 20px 10px 0;
 }
 
 .footer__text__copyright {
