@@ -52,6 +52,14 @@ img {
     margin: 20px 0;
 }
 
+.top-nav__name > a:hover {
+    outline: 2.5px dashed var(--top-nav-link-bg-color);
+}
+
+.top-nav__name > a:active{
+    outline: 2.5px dotted var(--top-nav-link-bg-color);
+}
+
 .top-nav__name > a {
     text-decoration: none;
 }
