@@ -152,24 +152,29 @@ img {
     margin-bottom: 0;
 }
 
-.home__featured, .about__our-bakers__bakers-info {
+.home__featured, 
+.about__our-bakers__bakers-info {
     display: flex;
     width: 100%;
 }
 
-.home__featured > *, .about__our-bakers__bakers-info > * {
+.home__featured > *, 
+.about__our-bakers__bakers-info > * {
     margin: 20px;
 }
 
-.home__featured__image, .about__our-bakers__bakers-info__image {
+.home__featured__image, 
+.about__our-bakers__bakers-info__image {
     width: 55%;
 }
 
-.home__featured__text, .about__our-bakers__bakers-info__text {
+.home__featured__text, 
+.about__our-bakers__bakers-info__text {
     width: 40%;
 }
 
-.home__featured__text > *, .about__our-bakers__bakers-info__text > * {
+.home__featured__text > *, 
+.about__our-bakers__bakers-info__text > * {
     width: 100%;
     padding-right: 4.5%;
 }
@@ -238,11 +243,15 @@ img {
     margin-bottom: 20px;
 }
 
+.about__our-bakers {
+    margin: 37.5px auto 25px;
+}
+
 .about__our-bakers__heading {
     font-family: var(--heading-font-family);
     font-size: 4.5rem;
     padding: 0 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 @media (max-width: 500px) {
@@ -254,35 +263,59 @@ img {
 
     /* Common page styles */
 
-    .home__header-image, .about__header-image {
+    .home__header-image, 
+    .about__header-image {
         margin-top: 50px;
     }
 
-    .home__intro, .about__intro {
+    .home__intro, 
+    .about__intro {
         margin-bottom: 50px;
     }
 
-    /* Home page styles */
-
-    .home__featured {
+    .home__featured, 
+    .about__our-bakers__bakers-info {
         flex-direction:  column;
     }
 
-    .home__featured:nth-child(odd) {
+    .home__featured:nth-child(odd), 
+    .about__our-bakers__bakers-info:nth-child(odd) {
         flex-direction: column-reverse;
     }
+
+    .home__featured__image > img, 
+    .about__our-bakers__bakers-info__image> img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Home page styles */
 
     .home__featured__image, .home__featured__text {
         width: 100%;
         margin: 20px auto;
     }
 
-    .home__featured__image > img {
-        display: block;
-        margin: 0 auto;
-    }
-
     .home__contact {
         margin-top: 30px;
+    }
+
+    /* About page styles */
+
+    .about__our-bakers {
+        margin: 37.5px auto 50px;
+    }
+
+    .about__our-bakers__heading {
+        margin: 20px 0 10px;
+    }
+
+    .about__our-bakers__bakers-info {
+        margin: 10px auto 20px;
+    }
+
+    .about__our-bakers__bakers-info__image, .about__our-bakers__bakers-info__text {
+        width: 100%;
+        margin: 10px auto;
     }
 }
