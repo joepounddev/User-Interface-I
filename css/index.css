@@ -119,6 +119,10 @@ img {
     margin: 20px 0;
 }
 
+.footer__text__heading > a {
+    text-decoration: none;
+}
+
 .footer__text__nav-menu {
     display: flex;
     flex-wrap: wrap;
