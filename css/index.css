@@ -1,6 +1,15 @@
 @import 'reset.css';
 @import 'variables.css';
 
+/* Animations */
+
+@keyframes flash {
+    25% { opacity: 0.5; }
+    50% { opacity: 1; }
+    75% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
 /* Global styles */
 
 * {
@@ -64,6 +73,7 @@ img {
 .top-nav__menu__item > a:hover {
     background-color: var(--top-nav-link-font-color);
     color: var(--top-nav-link-bg-color);
+    transform: scale(1.1);
     transition-duration: 500ms;
     transition-property: all;
 }
@@ -72,6 +82,7 @@ img {
     border: 1px dotted var(--top-nav-link-bg-color);
     transition-duration: 250ms;
     transition-property: all;
+    animation: flash 0.5s;
 }
 
 /* Footer styles */
