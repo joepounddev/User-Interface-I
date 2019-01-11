@@ -154,7 +154,8 @@ img {
 .about__header-image,
 .cookies__header-image,
 .weddings__header-image,
-.catering__header-image {
+.catering__header-image,
+.contact__header-image {
     text-align: center;
     margin: 15px auto 30px;
 }
@@ -200,7 +201,8 @@ img {
 .about__intro__heading, .about__how-we-bake__text__heading, .about__our-bakers__bakers-info__text__heading,
 .cookies__intro__heading, .cookies__type__text__heading,
 .weddings__intro__heading, .weddings__treat-package__text__heading,
-.catering__intro__heading {
+.catering__intro__heading,
+.contact__intro__heading {
     font-family: var(--heading-font-family);
     font-size: 3rem;
     padding: 0 10px;
@@ -352,7 +354,8 @@ img {
     .about__header-image,
     .cookies__header-image,
     .weddings__header-image,
-    .catering__header-image {
+    .catering__header-image,
+    .contact__header-image {
         margin-top: 50px;
     }
 
@@ -360,7 +363,8 @@ img {
     .about__intro,
     .cookies__intro,
     .weddings__intro,
-    .catering__intro {
+    .catering__intro,
+    .contact__intro {
         margin-bottom: 45px;
     }
 
