@@ -201,8 +201,7 @@ img {
 .about__intro__heading, .about__how-we-bake__text__heading, .about__our-bakers__bakers-info__text__heading,
 .cookies__intro__heading, .cookies__type__text__heading,
 .weddings__intro__heading, .weddings__treat-package__text__heading,
-.catering__intro__heading,
-.contact__intro__heading {
+.catering__intro__heading {
     font-family: var(--heading-font-family);
     font-size: 3rem;
     padding: 0 10px;
@@ -341,6 +340,76 @@ img {
     font-weight: bold;
 }
 
+/* Contact page styles */
+
+.contact__heading {
+    text-align: center;
+    font-family: var(--heading-font-family);
+    font-size: 4rem;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 25px auto 75px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: var(--body-font-family);
+    font-size: 1.2rem;
+    margin: 50px auto;
+}
+
+.contact__form > * {
+    margin: 10px 0;
+}
+
+.contact__form > * {
+    width: 100%;
+}
+
+.contact__form > * > * {
+    margin: 5px 0;
+}
+
+.contact__form > * > input {
+    width: 100%;
+    padding: 10px 1.25%;
+}
+
+.contact__form__name__label {
+    display: inline-block;
+    margin-bottom: -2.5px;
+}
+
+.contact__form__name__sections {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact__form__name__sections > * {
+    display: inline-flex;
+    flex-direction: column;
+    width: 47.5%;
+    
+}
+
+.contact__form__name__sections > * > * {
+    margin: 5px 0;
+}
+
+.contact__form__name__sections > * > input {
+    width: 100%;
+    padding: 5px 2.5%;
+}
+
+.contact__form__message__input {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
 @media (max-width: 500px) {
     /* Top nav styles */
 
@@ -354,8 +423,7 @@ img {
     .about__header-image,
     .cookies__header-image,
     .weddings__header-image,
-    .catering__header-image,
-    .contact__header-image {
+    .catering__header-image {
         margin-top: 50px;
     }
 
@@ -435,4 +503,8 @@ img {
         padding: 7.5px 0 7.5px;
         margin-left: 12.5%;
     }
+
+    /* Contact page styles */
+
+
 }
