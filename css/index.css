@@ -159,21 +159,10 @@ img {
     margin: 15px auto 30px;
 }
 
-.home__intro__heading, .home__featured__text__heading, .home__contact__heading,
-.about__intro__heading, .about__how-we-bake__text__heading, .about__our-bakers__bakers-info__text__heading,
-.cookies__intro__heading, .cookies__type__text__heading,
-.weddings__intro__heading, .weddings__treat-packages__text__heading,
-.catering__intro__heading {
-    font-family: var(--heading-font-family);
-    font-size: 3rem;
-    padding: 0 10px;
-    margin-bottom: 0;
-}
-
 .home__featured, 
 .about__our-bakers__bakers-info,
 .cookies__type,
-.weddings__treat-packages {
+.weddings__treat-package {
     display: flex;
     width: 100%;
 }
@@ -181,30 +170,41 @@ img {
 .home__featured > *, 
 .about__our-bakers__bakers-info > *,
 .cookies__type > *,
-.weddings__treat-packages > * {
+.weddings__treat-package > * {
     margin: 20px;
 }
 
 .home__featured__image, 
 .about__our-bakers__bakers-info__image,
 .cookies__type__image,
-.weddings__treat-packages__image {
+.weddings__treat-package__image {
     width: 55%;
 }
 
 .home__featured__text, 
 .about__our-bakers__bakers-info__text,
 .cookies__type__text,
-.weddings__treat-packages__text {
+.weddings__treat-package__text {
     width: 40%;
 }
 
 .home__featured__text > *, 
 .about__our-bakers__bakers-info__text > *,
 .cookies__type__text > *,
-.weddings__treat-packages__text > * {
+.weddings__treat-package__text > * {
     width: 100%;
     padding-right: 4.5%;
+}
+
+.home__intro__heading, .home__featured__text__heading, .home__contact__heading,
+.about__intro__heading, .about__how-we-bake__text__heading, .about__our-bakers__bakers-info__text__heading,
+.cookies__intro__heading, .cookies__type__text__heading,
+.weddings__intro__heading, .weddings__treat-package__text__heading,
+.catering__intro__heading {
+    font-family: var(--heading-font-family);
+    font-size: 3rem;
+    padding: 0 10px;
+    margin-bottom: 0;
 }
 
 /* Home page styles */
@@ -294,6 +294,51 @@ img {
     margin: 0 auto;
 }
 
+/* Catering page styles */
+
+.catering__intro {
+    margin: 30px auto;
+}
+
+.catering__package {
+    width: 100%;
+    margin: 75px auto 50px;
+}
+
+.catering__package__image {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.catering__package__text__header {
+    font-family: var(--heading-font-family);
+    font-size: 3.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.catering__package__text__menu-label {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.catering__package__text__menu {
+    list-style-type: disc;
+}
+
+.catering__package__text__menu__item {
+    font-family: var(--body-font-family);
+    font-size: 1.6rem;
+    line-height: 1.4;
+    padding: 10px 0 10px;
+    margin-left: 8.75%;
+}
+
+.catering__package__text__menu__item__header {
+    font-weight: bold;
+}
+
 @media (max-width: 500px) {
     /* Top nav styles */
 
@@ -321,7 +366,7 @@ img {
 
     .about__our-bakers__bakers-info,
     .cookies__type,
-    .weddings__treat-packages {
+    .weddings__treat-package {
         flex-direction: column;
         margin: 10px auto 20px;
     }
@@ -329,14 +374,14 @@ img {
     .home__featured:nth-child(odd), 
     .about__our-bakers__bakers-info:nth-child(odd),
     .cookies__type:nth-child(even),
-    .weddings__treat-packages:nth-child(odd) {
+    .weddings__treat-package:nth-child(odd) {
         flex-direction: column-reverse;
     }
 
     .home__featured__image > img, 
     .about__our-bakers__bakers-info__image > img,
     .cookies__type__image > img,
-    .weddings__treat-packages__image > img {
+    .weddings__treat-package__image > img {
         display: block;
         margin: 0 auto;
     }
@@ -344,7 +389,7 @@ img {
     .home__featured__image, .home__featured__text,
     .about__our-bakers__bakers-info__image, .about__our-bakers__bakers-info__text,
     .cookies__type__image, .cookies__type__text,
-    .weddings__treat-packages__image, .weddings__treat-packages__text {
+    .weddings__treat-package__image, .weddings__treat-package__text {
         width: 100%;
         margin: 10px auto;
     }
@@ -373,5 +418,17 @@ img {
 
     .weddings__cakes__heading {
         font-size: 3.5rem;
+    }
+
+    /* Catering page styles */
+
+    .catering__package__text__header {
+        font-size: 2.75rem;
+    }
+
+    .catering__package__text__menu__item {
+        line-height: 1.2;
+        padding: 7.5px 0 7.5px;
+        margin-left: 12.5%;
     }
 }
