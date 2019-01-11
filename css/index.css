@@ -151,8 +151,15 @@ img {
 
 /* Common page styles */
 
+.about__header-image,
+.cookies__header-image {
+    text-align: center;
+    margin: 15px auto 30px;
+}
+
 .home__intro__heading, .home__featured__text__heading, .home__contact__heading,
-.about__intro__heading, .about__how-we-bake__text__heading, .about__our-bakers__bakers-info__text__heading {
+.about__intro__heading, .about__how-we-bake__text__heading, .about__our-bakers__bakers-info__text__heading,
+.cookies__intro__heading, .cookies__type__text__heading {
     font-family: var(--heading-font-family);
     font-size: 3rem;
     padding: 0 10px;
@@ -160,28 +167,33 @@ img {
 }
 
 .home__featured, 
-.about__our-bakers__bakers-info {
+.about__our-bakers__bakers-info,
+.cookies__type {
     display: flex;
     width: 100%;
 }
 
 .home__featured > *, 
-.about__our-bakers__bakers-info > * {
+.about__our-bakers__bakers-info > *,
+.cookies__type > * {
     margin: 20px;
 }
 
 .home__featured__image, 
-.about__our-bakers__bakers-info__image {
+.about__our-bakers__bakers-info__image,
+.cookies__type__image {
     width: 55%;
 }
 
 .home__featured__text, 
-.about__our-bakers__bakers-info__text {
+.about__our-bakers__bakers-info__text,
+.cookies__type__text {
     width: 40%;
 }
 
 .home__featured__text > *, 
-.about__our-bakers__bakers-info__text > * {
+.about__our-bakers__bakers-info__text > *,
+.cookies__type__text > * {
     width: 100%;
     padding-right: 4.5%;
 }
@@ -190,28 +202,6 @@ img {
 
 .home__header-image {
     margin-bottom: 20px;
-}
-
-.home__featured {
-    display: flex;
-    width: 100%;
-}
-
-.home__featured > * {
-    margin: 20px;
-}
-
-.home__featured__image {
-    width: 55%;
-}
-
-.home__featured__text {
-    width: 40%;
-}
-
-.home__featured__text > * {
-    width: 100%;
-    padding-right: 4.5%;
 }
 
 .home__contact {
@@ -231,14 +221,9 @@ img {
 
 /* About page styles */
 
-.about__header-image {
-    text-align: center;
-    margin: 25px auto;
-}
-
 .about__intro {
     width: 100%;
-    margin: 25px auto 50px
+    margin: 30px auto 50px;
 }
 
 .about__how-we-bake {
@@ -261,6 +246,13 @@ img {
     margin-bottom: 15px;
 }
 
+/* Cookies page styles */
+
+.cookies__intro {
+    width: 100%;
+    margin: 30px auto;
+}
+
 @media (max-width: 500px) {
     /* Top nav styles */
 
@@ -271,36 +263,47 @@ img {
     /* Common page styles */
 
     .home__header-image, 
-    .about__header-image {
+    .about__header-image,
+    .cookies__header-image {
         margin-top: 50px;
     }
 
     .home__intro, 
-    .about__intro {
-        margin-bottom: 50px;
+    .about__intro,
+    .cookies__intro {
+        margin-bottom: 45px;
     }
 
-    .home__featured, 
-    .about__our-bakers__bakers-info {
+    .about__our-bakers__bakers-info,
+    .cookies__type {
         flex-direction: column;
+        margin: 10px auto 20px;
     }
 
     .home__featured:nth-child(odd), 
-    .about__our-bakers__bakers-info:nth-child(odd) {
+    .about__our-bakers__bakers-info:nth-child(odd),
+    .cookies__type:nth-child(even) {
         flex-direction: column-reverse;
     }
 
     .home__featured__image > img, 
-    .about__our-bakers__bakers-info__image> img {
+    .about__our-bakers__bakers-info__image > img,
+    .cookies__type__image > img {
         display: block;
         margin: 0 auto;
     }
 
+    .home__featured__image, .home__featured__text,
+    .about__our-bakers__bakers-info__image, .about__our-bakers__bakers-info__text,
+    .cookies__type__image, .cookies__type__text {
+        width: 100%;
+        margin: 10px auto;
+    }
+
     /* Home page styles */
 
-    .home__featured__image, .home__featured__text {
-        width: 100%;
-        margin: 20px auto;
+    .home__featured {
+        flex-direction: column;
     }
 
     .home__contact {
@@ -315,14 +318,5 @@ img {
 
     .about__our-bakers__heading {
         margin: 20px 0 10px;
-    }
-
-    .about__our-bakers__bakers-info {
-        margin: 10px auto 20px;
-    }
-
-    .about__our-bakers__bakers-info__image, .about__our-bakers__bakers-info__text {
-        width: 100%;
-        margin: 10px auto;
     }
 }
