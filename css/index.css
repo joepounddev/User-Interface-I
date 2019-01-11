@@ -74,7 +74,7 @@ img {
     display: inline-block;
     width: 15%;
     text-align: center;
-    margin: 0 2%;
+    margin: 0 2% 20px 2%;
 }
 
 .top-nav__menu__item > a {
@@ -84,10 +84,9 @@ img {
     font-size: 1.6rem;
     color: var(--top-nav-link-font-color);
     text-decoration: none;
-    padding: 20px 1%;
+    padding: 20px 0;
     border: 1px solid var(--top-nav-link-border-color);
     border-radius: 20px;
-    margin-bottom: 20px;
 }
 
 .top-nav__menu__item > a:hover {
@@ -283,7 +282,7 @@ img {
 
     .home__featured, 
     .about__our-bakers__bakers-info {
-        flex-direction:  column;
+        flex-direction: column;
     }
 
     .home__featured:nth-child(odd), 
