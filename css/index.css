@@ -13,11 +13,6 @@
 
 /* Global styles */
 
-* {
-    color: var(--body-font-color);
-    box-sizing: border-box;
-}
-
 html {
     font-size: 62.5%;
 }
@@ -32,6 +27,11 @@ p {
 img {
     max-width: 100%;
     border-radius: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--body-font-color);
 }
 
 /* Heading tag elements  with this class are used inside some semantic elements 
@@ -61,7 +61,7 @@ img {
 }
 
 .top-nav__name > a:active{
-    outline: 2.5px dotted var(--top-nav-link-bg-color);
+    outline-style: dotted;
 }
 
 .top-nav__name > a {
@@ -71,13 +71,13 @@ img {
 .top-nav__menu {
     width: 100%;
     text-align: center;
+    font-size: 1.6rem;
     margin: 0 auto;
 }
 
 .top-nav__menu__item {
     display: inline-block;
     width: 15%;
-    text-align: center;
     margin: 0 2% 20px 2%;
 }
 
@@ -86,7 +86,6 @@ img {
     display: inline-block;
     width: 100%;
     background-color: var(--top-nav-link-bg-color);
-    font-size: 1.6rem;
     color: var(--top-nav-link-font-color);
     text-decoration: none;
     padding: 20px 0;
@@ -170,6 +169,14 @@ img {
     margin: 15px auto 30px;
 }
 
+.about__intro,
+.cookies__intro,
+.weddings__intro,
+.catering__intro {
+    width: 100%;
+    margin: 30px auto;
+}
+
 .home__featured, 
 .about__our-bakers__bakers-info,
 .cookies__type,
@@ -215,7 +222,6 @@ img {
     font-family: var(--heading-font-family);
     font-size: 3rem;
     padding: 0 10px;
-    margin-bottom: 0;
 }
 
 /* Home page styles */
@@ -239,12 +245,7 @@ img {
 /* About page styles */
 
 .about__intro {
-    width: 100%;
-    margin: 30px auto 50px;
-}
-
-.about__how-we-bake {
-    margin: 25px auto;
+    margin-bottom: 50px;
 }
 
 .about__how-we-bake__image {
@@ -263,18 +264,7 @@ img {
     margin-bottom: 15px;
 }
 
-/* Cookies page styles */
-
-.cookies__intro {
-    width: 100%;
-    margin: 30px auto;
-}
-
 /* Weddings page styles */
-
-.weddings__intro {
-    margin: 30px auto;
-}
 
 .weddings__cakes {
     margin: 25px auto 50px;
@@ -303,10 +293,6 @@ img {
 }
 
 /* Catering page styles */
-
-.catering__intro {
-    margin: 30px auto;
-}
 
 .catering__package {
     width: 100%;
@@ -372,11 +358,13 @@ img {
     margin: 10px 0;
 }
 
-.contact__form > * > * {
+.contact__form > * > *, 
+.contact__form__name__sections > * > * {
     margin: 5px 0;
 }
 
-.contact__form > * > input {
+.contact__form > * > input,
+.contact__form__name__sections > * > input {
     width: 100%;
     padding: 10px 1.25%;
 }
@@ -397,15 +385,6 @@ img {
     flex-direction: column;
     width: 47.5%;
     
-}
-
-.contact__form__name__sections > * > * {
-    margin: 5px 0;
-}
-
-.contact__form__name__sections > * > input {
-    width: 100%;
-    padding: 10px 2.5%;
 }
 
 .contact__form__message__input {
@@ -437,7 +416,7 @@ img {
     border-radius: 2.5px;
     margin-right: 5%;
     transition-duration: 250ms;
-    transition-property: all;
+    transition-property: filter;
 }
 
 .contact__form__buttons > *:hover {
@@ -477,7 +456,7 @@ img {
     .cookies__type,
     .weddings__treat-package {
         flex-direction: column;
-        margin: 10px auto 20px;
+        margin: 10px auto 37.5px;
     }
 
     .home__featured:nth-child(odd), 
@@ -506,7 +485,7 @@ img {
     /* Home page styles */
 
     .home__contact {
-        margin-top: 30px;
+        margin: 30px 0 15px;
     }
 
     /* About page styles */
