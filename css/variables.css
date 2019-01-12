@@ -17,10 +17,16 @@
     --footer-border-color: var(--white);
     --footer-link-font-color: var(--black);
 
+    /* Contact color assignments */
+    --contact-form-btn-bg-color: var(--tickle-me-pink);
+    --contact-form-btn-font-color: var(--white);
+    --contact-form-btn-border-color: var(--tickle-me-pink);
+
     /* Color values */
     --thunder: #3C373B;
     --black: #000000;
     --tickle-me-pink: #F87B99;
     --white: #FFFFFF;
     --lightgrey: #D3D3D3;
+    --guardsman-red: #d10000;
 }

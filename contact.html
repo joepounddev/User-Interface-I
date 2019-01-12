@@ -24,9 +24,9 @@
                 <header>
                     <h1 class="contact__heading">Contact Us</h1>
                 </header>
-                <form class="contact__form">
+                <form class="contact__form" onsubmit="alert('Thank you! Your message has been sent.')">
                     <div class="contact__form__name">
-                        <label class="contact__form__name__label">Name *</label>    
+                        <label class="contact__form__name__label">Name</label>    
                         <div class="contact__form__name__sections">
                             <div class="contact__form__name__sections__firstname">
                                 <input class="contact__form__name__sections__lastname__input" type="text" required>
@@ -39,20 +39,20 @@
                         </div>
                     </div>
                     <div class="contact__form__email">
-                        <label class="contact__form__email__label">Email Address *</label>
+                        <label class="contact__form__email__label">Email Address</label>
                         <input class="contact__form__email__input" type="email" required placeholder="(name@domain.com)">
                     </div>
                     <div class="contact__form__subject">
-                        <label class="contact__form__subject__label">Subject *</label>
+                        <label class="contact__form__subject__label">Subject</label>
                         <input class="contact__form__subject__input" type="text" required>
                     </div>
                     <div class="contact__form__message">
-                        <label class="contact__form__message__label">Message *</label>
+                        <label class="contact__form__message__label">Message</label>
                         <textarea class="contact__form__message__input" required></textarea>
                     </div>
                     <div class="contact__form__buttons">
-                        <button type="submit">Submit</button>
-                        <button type="reset">Clear All</button>
+                        <button type="submit">SUBMIT</button>
+                        <button type="reset">CLEAR ALL</button>
                     </div>
                 </form>
             </main>
