@@ -153,6 +153,7 @@ img {
 
 /* Common page styles */
 
+.home__header-image,
 .about__header-image,
 .cookies__header-image,
 .weddings__header-image,
@@ -212,13 +213,10 @@ img {
 
 /* Home page styles */
 
-.home__header-image {
-    margin-bottom: 20px;
-}
-
 .home__contact {
     padding: 20px 0;
     border-top: 1px dashed var(--dashed-border-separator-color);
+    margin-bottom: 12.5px;
 }
 
 .home__contact__heading {
@@ -467,6 +465,7 @@ img {
         margin-bottom: 45px;
     }
 
+    .home__featured,
     .about__our-bakers__bakers-info,
     .cookies__type,
     .weddings__treat-package {
@@ -498,10 +497,6 @@ img {
     }
 
     /* Home page styles */
-
-    .home__featured {
-        flex-direction: column;
-    }
 
     .home__contact {
         margin-top: 30px;
@@ -549,6 +544,6 @@ img {
     .contact__form__buttons > * {
         width: 100%;
         font-weight: bold;
-        margin: 5px 0;
+        margin: 7.5px 0;
     }
 }
