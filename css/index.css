@@ -3,6 +3,7 @@
 
 /* Animations */
 
+/* Quick flashes using a series of fade animations*/
 @keyframes flash {
     25% { opacity: 0.5; }
     50% { opacity: 1; }
@@ -33,6 +34,8 @@ img {
     border-radius: 10px;
 }
 
+/* Heading tag elements  with this class are used inside some semantic elements 
+   to prevent the HTML5 outline from showing an "Untitled Section" */
 .outliner-aid {
     display: none;
 }
@@ -52,6 +55,7 @@ img {
     margin: 20px 0;
 }
 
+/* Hover and active styling included to indicate that the element is clickable */
 .top-nav__name > a:hover {
     outline: 2.5px dashed var(--top-nav-link-bg-color);
 }
@@ -77,6 +81,7 @@ img {
     margin: 0 2% 20px 2%;
 }
 
+/* Contains transitions for color change and scale-down effects */
 .top-nav__menu__item > a {
     display: inline-block;
     width: 100%;
@@ -88,9 +93,10 @@ img {
     border: 1px solid var(--top-nav-link-border-color);
     border-radius: 20px;
     transition-duration: 250ms;
-    transition-property: all
+    transition-property: background-color, color, transform;
 }
 
+/* Contains transitions for color change and scale-up effects */
 .top-nav__menu__item > a:hover {
     background-color: var(--top-nav-link-font-color);
     color: var(--top-nav-link-bg-color);
@@ -99,6 +105,7 @@ img {
     transition-property: all;
 }
 
+/* Changes border appearance and fires the "flash" keyframe-based animation */
 .top-nav__menu__item > a:active {
     border: 1px dotted var(--top-nav-link-bg-color);
     transition-duration: 250ms;
