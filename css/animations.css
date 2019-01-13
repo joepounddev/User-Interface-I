@@ -1,0 +1,13 @@
+/* Quick flashes using a series of fade animations*/
+@-webkit-keyframes flash {
+    25% { opacity: 0.5; }
+    50% { opacity: 1; }
+    75% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+@keyframes flash {
+    25% { opacity: 0.5; }
+    50% { opacity: 1; }
+    75% { opacity: 0.5; }
+    100% { opacity: 1; }
+}

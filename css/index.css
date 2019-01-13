@@ -1,21 +1,6 @@
 @import 'reset.css';
 @import 'variables.css';
-
-/* Animations */
-
-/* Quick flashes using a series of fade animations*/
-@-webkit-keyframes flash {
-    25% { opacity: 0.5; }
-    50% { opacity: 1; }
-    75% { opacity: 0.5; }
-    100% { opacity: 1; }
-}
-@keyframes flash {
-    25% { opacity: 0.5; }
-    50% { opacity: 1; }
-    75% { opacity: 0.5; }
-    100% { opacity: 1; }
-}
+@import 'animations.css';
 
 /* Global styles */
 
@@ -124,7 +109,6 @@ img {
     -webkit-transition-duration: 250ms;
             transition-duration: 250ms;
     -webkit-transition-property: all;
-    transition-property: all;
     -webkit-animation: flash 0.5s;
             animation: flash 0.5s;
 }
