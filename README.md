@@ -10,4 +10,4 @@ URL: https://joepound-ls-ui1-sweet-eats-bakery.netlify.com/
 
 * _Semantic_ **HTML5** markup that has been _validated_ according to W3C standards and is _outliner-friendly_
 * **CSS3** code (with _reset_ utilized) written in _BEM notation_  that utilizes _CSS variables_ and native animations (including _transitioning properties_ and  _keyframe-based animations_)
-* **Responsive design** that is both _desktop-friendly_ and _mobile-friendly_
+* **Responsive design** that is _desktop-friendly_, _tablet-friendly_, and _mobile-friendly_
