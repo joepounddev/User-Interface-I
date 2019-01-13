@@ -61,7 +61,6 @@ img {
 }
 
 .top-nav__menu {
-    width: 100%;
     text-align: center;
     font-size: 1.6rem;
     margin: 0 auto;
@@ -116,7 +115,6 @@ img {
 /* Footer styles */
 
 .footer {
-    width: 100%;
     max-width: 740px;
     background-color: var(--footer-bg-color);
     border-top: 1px dashed var(--footer-border-color);
@@ -177,7 +175,6 @@ img {
 .cookies__intro,
 .weddings__intro,
 .catering__intro {
-    width: 100%;
     margin: 30px auto;
 }
 
@@ -188,7 +185,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
 }
 
 .home__featured > *, 
@@ -216,7 +212,6 @@ img {
 .about__our-bakers__bakers-info__text > *,
 .cookies__type__text > *,
 .weddings__treat-package__text > * {
-    width: 100%;
     padding-right: 4.5%;
 }
 
@@ -305,12 +300,10 @@ img {
 /* Catering page styles */
 
 .catering__package {
-    width: 100%;
     margin: 75px auto 50px;
 }
 
 .catering__package__image {
-    width: 100%;
     text-align: center;
     margin: 20px auto;
 }
@@ -362,14 +355,12 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
     font-family: var(--body-font-family);
     font-size: 1.2rem;
     margin: 25px auto;
 }
 
 .contact__form > * {
-    width: 100%;
     margin: 10px 0;
 }
 
@@ -396,7 +387,6 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 100%;
 }
 
 .contact__form__name__sections > * {
@@ -412,7 +402,6 @@ img {
 }
 
 .contact__form__message__input {
-    display: block;
     width: 100%;
     height: 100px;
 }
