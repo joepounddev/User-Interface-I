@@ -446,6 +446,7 @@ img {
     transition-property: all;
 }
 
+/* Approximated media query for mobile view styling */
 @media (max-width: 500px) {
     /* Top nav styles */
 
