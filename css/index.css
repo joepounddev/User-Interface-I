@@ -1,568 +1,585 @@
-@import 'reset.css';
-@import 'variables.css';
-@import 'animations.css';
+@import "reset.css";
+@import "variables.css";
+@import "animations.css";
 
 /* Global styles */
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 p {
-    font-family: var(--body-font-family);
-    font-size: 1.6rem;
-    line-height: 1.4;
-    padding: 10px;
+  font-family: var(--body-font-family);
+  font-size: 1.6rem;
+  line-height: 1.4;
+  padding: 10px;
 }
 
 img {
-    max-width: 100%;
-    border-radius: 10px;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    color: var(--body-font-color);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: var(--body-font-color);
 }
 
-/* Heading tag elements  with this class are used inside some semantic elements 
-   to prevent the HTML5 outline from showing an "Untitled Section" */
+/* Heading tag elements with this class are used inside some semantic elements 
+   to prevent HTML5 outlines from showing an "Untitled Section" */
 .outliner-aid {
-    display: none;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; /* added line */
+  width: 1px;
 }
 
 .page-container {
-    width: 90%;
-    max-width: 600px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.site__name {
+  text-align: center;
+  font-family: var(--heading-font-family);
+  font-size: 6rem;
+  margin: 20px 0;
+}
+
+.site__name > a {
+  text-decoration: none;
+}
+
+/* Hover and active styling included to indicate that the element is clickable */
+.site__name > a:hover {
+  outline: 2.5px dashed var(--top-nav-link-bg-color);
+}
+
+.site__name > a:active {
+  outline-style: dotted;
 }
 
 /* Top nav styles */
 
-.top-nav__name {
-    text-align: center;
-    font-family: var(--heading-font-family);
-    font-size: 6rem;
-    margin: 20px 0;
-}
-
-/* Hover and active styling included to indicate that the element is clickable */
-.top-nav__name > a:hover {
-    outline: 2.5px dashed var(--top-nav-link-bg-color);
-}
-
-.top-nav__name > a:active{
-    outline-style: dotted;
-}
-
-.top-nav__name > a {
-    text-decoration: none;
-}
-
 .top-nav__menu {
-    text-align: center;
-    font-size: 1.6rem;
-    margin: 0 auto;
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0 auto;
 }
 
 .top-nav__menu__item {
-    display: inline-block;
-    width: 15%;
-    margin: 0 2% 20px 2%;
+  display: inline-block;
+  width: 15%;
+  margin: 0 2% 20px 2%;
 }
 
 /* Contains transitions for color change and scale-down effects */
 .top-nav__menu__item > a {
-    display: inline-block;
-    width: 100%;
-    background-color: var(--top-nav-link-bg-color);
-    color: var(--top-nav-link-font-color);
-    text-decoration: none;
-    padding: 20px 0;
-    border: 1px solid var(--top-nav-link-border-color);
-    border-radius: 20px;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-property: background-color, color, -webkit-transform;
-    transition-property: background-color, color, -webkit-transform;
-    transition-property: background-color, color, transform;
-    transition-property: background-color, color, transform, -webkit-transform;
+  display: inline-block;
+  width: 100%;
+  background-color: var(--top-nav-link-bg-color);
+  color: var(--top-nav-link-font-color);
+  text-decoration: none;
+  padding: 20px 0;
+  border: 1px solid var(--top-nav-link-border-color);
+  border-radius: 20px;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: background-color, color, -webkit-transform;
+  transition-property: background-color, color, -webkit-transform;
+  transition-property: background-color, color, transform;
+  transition-property: background-color, color, transform, -webkit-transform;
 }
 
 /* Contains transitions for color change and scale-up effects */
 .top-nav__menu__item > a:hover {
-    background-color: var(--top-nav-link-font-color);
-    color: var(--top-nav-link-bg-color);
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition-duration: 500ms;
-            transition-duration: 500ms;
-    -webkit-transition-property: all;
-    transition-property: all;
+  background-color: var(--top-nav-link-font-color);
+  color: var(--top-nav-link-bg-color);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 
 /* Changes border appearance and fires the "flash" keyframe-based animation */
 .top-nav__menu__item > a:active {
-    border: 1px dotted var(--top-nav-link-bg-color);
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-property: all;
-    -webkit-animation: flash 0.5s;
-            animation: flash 0.5s;
+  border: 1px dotted var(--top-nav-link-bg-color);
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: all;
+  -webkit-animation: flash 0.5s;
+  animation: flash 0.5s;
 }
 
 /* Footer styles */
 
 .footer {
-    max-width: 740px;
-    background-color: var(--footer-bg-color);
-    border-top: 1px dashed var(--footer-border-color);
-    margin: 0 auto;
+  max-width: 740px;
+  background-color: var(--footer-bg-color);
+  border-top: 1px dashed var(--footer-border-color);
+  margin: 0 auto;
 }
 
 .footer__text {
-    width: 90%;
-    max-width: 600px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .footer__text__heading {
-    font-family: var(--heading-font-family);
-    font-size: 3rem;
-    margin: 20px 0;
+  font-family: var(--heading-font-family);
+  font-size: 3rem;
+  margin: 20px 0;
 }
 
 .footer__text__heading > a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer__text__nav-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .footer__text__nav-menu__item {
-    font-size: 1.6rem;
-    color: var(--footer-link-font-color);
-    text-decoration-skip-ink: none;
-    margin: 10px 20px 10px 0;
+  font-size: 1.6rem;
+  color: var(--footer-link-font-color);
+  text-decoration-skip-ink: none;
+  margin: 10px 20px 10px 0;
 }
 
 .footer__text__copyright {
-    text-align: center;
-    font-family: var(--body-font-family);
-    font-size: 1.6rem;
-    padding: 20px 0;
+  text-align: center;
+  font-family: var(--body-font-family);
+  font-size: 1.6rem;
+  padding: 20px 0;
 }
 
 /* Common page styles */
 
-.home__header-image,
-.about__header-image,
-.cookies__header-image,
-.weddings__header-image,
-.catering__header-image,
-.contact__header-image {
-    text-align: center;
-    margin: 15px auto 30px;
+.home__intro__image,
+.about__intro__image,
+.cookies__intro__image,
+.weddings__intro__image,
+.catering__intro__image,
+.contact__intro__image {
+  text-align: center;
+  margin: 15px auto 30px;
 }
 
 .about__intro,
 .cookies__intro,
 .weddings__intro,
 .catering__intro {
-    margin: 30px auto;
+  margin: 30px auto;
 }
 
-.home__featured, 
+.home__featured,
 .about__our-bakers__bakers-info,
 .cookies__type,
 .weddings__treat-package {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.home__featured > *, 
+.home__featured > *,
 .about__our-bakers__bakers-info > *,
 .cookies__type > *,
 .weddings__treat-package > * {
-    margin: 20px;
+  margin: 20px;
 }
 
-.home__featured__image, 
+.home__featured__image,
 .about__our-bakers__bakers-info__image,
 .cookies__type__image,
 .weddings__treat-package__image {
-    width: 55%;
+  width: 55%;
 }
 
-.home__featured__text, 
+.home__featured__text,
 .about__our-bakers__bakers-info__text,
 .cookies__type__text,
 .weddings__treat-package__text {
-    width: 40%;
+  width: 40%;
 }
 
-.home__featured__text > *, 
+.home__featured__text > *,
 .about__our-bakers__bakers-info__text > *,
 .cookies__type__text > *,
 .weddings__treat-package__text > * {
-    padding-right: 4.5%;
+  padding-right: 4.5%;
 }
 
-.home__intro__heading, .home__featured__text__heading, .home__contact__heading,
-.about__intro__heading, .about__how-we-bake__text__heading, .about__our-bakers__bakers-info__text__heading,
-.cookies__intro__heading, .cookies__type__text__heading,
-.weddings__intro__heading, .weddings__treat-package__text__heading,
-.catering__intro__heading {
-    font-family: var(--heading-font-family);
-    font-size: 3rem;
-    padding: 0 10px;
+.home__intro__text__heading,
+.home__featured__text__heading,
+.home__contact__heading,
+.about__intro__text__heading,
+.about__how-we-bake__text__heading,
+.about__our-bakers__bakers-info__text__heading,
+.cookies__intro__text__heading,
+.cookies__type__text__heading,
+.weddings__intro__text__heading,
+.weddings__treat-package__text__heading,
+.catering__intro__text__heading {
+  font-family: var(--heading-font-family);
+  font-size: 3rem;
+  padding: 0 10px;
 }
 
 /* Home page styles */
 
 .home__contact {
-    padding: 20px 0;
-    border-top: 1px dashed var(--dashed-border-separator-color);
-    margin-bottom: 12.5px;
+  padding: 20px 0;
+  border-top: 1px dashed var(--dashed-border-separator-color);
+  margin-bottom: 12.5px;
 }
 
 .home__contact__heading {
-    padding: 0;
-    margin-bottom: 10px;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
 .home__contact__details {
-    font-size:  1.6rem;
-    line-height: 2;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
 /* About page styles */
 
 .about__intro {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .about__how-we-bake__image {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .about__our-bakers {
-    margin: 37.5px auto 0;
+  margin: 37.5px auto 0;
 }
 
 .about__our-bakers__heading {
-    font-family: var(--heading-font-family);
-    font-size: 4.5rem;
-    padding: 0 10px;
-    margin-bottom: 15px;
+  font-family: var(--heading-font-family);
+  font-size: 4.5rem;
+  padding: 0 10px;
+  margin-bottom: 15px;
 }
 
 /* Weddings page styles */
 
 .weddings__cakes {
-    margin: 25px auto 50px;
+  margin: 25px auto 50px;
 }
 
 .weddings__cakes__heading {
-    font-family: var(--heading-font-family);
-    font-size: 3.75rem;
-    padding: 0 10px;
-    margin-bottom: 15px;
+  font-family: var(--heading-font-family);
+  font-size: 3.75rem;
+  padding: 0 10px;
+  margin-bottom: 15px;
 }
 
 .weddings__cakes__gallery {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .weddings__cakes__gallery__images {
-    width: 50%;
+  width: 50%;
 }
 
 .weddings__cakes__gallery__images > img {
-    display: block;
-    padding: 0 5px;
-    margin: 0 auto;
+  display: block;
+  padding: 0 5px;
+  margin: 0 auto;
 }
 
 /* Catering page styles */
 
 .catering__package {
-    margin: 75px auto 50px;
+  margin: 75px auto 50px;
 }
 
 .catering__package__image {
-    text-align: center;
-    margin: 20px auto;
+  text-align: center;
+  margin: 20px auto;
 }
 
 .catering__package__text__header {
-    font-family: var(--heading-font-family);
-    font-size: 3.25rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-family: var(--heading-font-family);
+  font-size: 3.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .catering__package__text__menu-label {
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
 
 .catering__package__text__menu {
-    list-style-type: disc;
+  list-style-type: disc;
 }
 
 .catering__package__text__menu__item {
-    font-family: var(--body-font-family);
-    font-size: 1.6rem;
-    line-height: 1.4;
-    padding: 10px 0 10px;
-    margin-left: 8.75%;
+  font-family: var(--body-font-family);
+  font-size: 1.6rem;
+  line-height: 1.4;
+  padding: 10px 0 10px;
+  margin-left: 8.75%;
 }
 
 .catering__package__text__menu__item__header {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* Contact page styles */
 
 .contact__heading {
-    text-align: center;
-    font-family: var(--heading-font-family);
-    font-size: 4rem;
-    font-weight: bold;
-    text-decoration: underline;
-    margin: 25px auto;
+  text-align: center;
+  font-family: var(--heading-font-family);
+  font-size: 4rem;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 25px auto;
 }
 
 .contact__form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    font-family: var(--body-font-family);
-    font-size: 1.2rem;
-    margin: 25px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: var(--body-font-family);
+  font-size: 1.2rem;
+  margin: 25px auto;
 }
 
 .contact__form > * {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
-.contact__form > * > *, 
+.contact__form > * > *,
 .contact__form__name__sections > * > * {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .contact__form > * > input,
 .contact__form__name__sections > * > input {
-    width: 100%;
-    padding: 10px 1.25%;
+  width: 100%;
+  padding: 10px 1.25%;
 }
 
 .contact__form__name__label {
-    display: inline-block;
-    margin-bottom: -2.5px;
+  display: inline-block;
+  margin-bottom: -2.5px;
 }
 
 .contact__form__name__sections {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .contact__form__name__sections > * {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 47.5%;
-    
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 47.5%;
 }
 
 .contact__form__message__input {
-    width: 100%;
-    height: 100px;
+  width: 100%;
+  height: 100px;
 }
 
 .contact__form__name__label:after,
 .contact__form__email__label:after,
 .contact__form__subject__label:after,
 .contact__form__message__label:after {
-    content: "*";
-    color: red;
-    margin-left: 5px;
+  content: "*";
+  color: red;
+  margin-left: 5px;
 }
 
 .contact__form__buttons > * {
-    width: 125px;
-    background-color: var(--contact-form-btn-bg-color);
-    font-family: var(--body-font-family);
-    color: var(--contact-form-btn-font-color);
-    text-indent: 2.5px;
-    letter-spacing: 2.5px;
-    cursor: pointer;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    padding: 10px;
-    border-color: var(--contact-form-btn-border-color);
-    border-radius: 2.5px;
-    margin-right: 5%;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-property: -webkit-filter;
-    transition-property: -webkit-filter;
-    transition-property: filter;
-    transition-property: filter, -webkit-filter;
+  width: 125px;
+  background-color: var(--contact-form-btn-bg-color);
+  font-family: var(--body-font-family);
+  color: var(--contact-form-btn-font-color);
+  text-indent: 2.5px;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 10px;
+  border-color: var(--contact-form-btn-border-color);
+  border-radius: 2.5px;
+  margin-right: 5%;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: -webkit-filter;
+  transition-property: -webkit-filter;
+  transition-property: filter;
+  transition-property: filter, -webkit-filter;
 }
 
 .contact__form__buttons > *:hover {
-    -webkit-filter: brightness(105%);
-            filter: brightness(105%);
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-property: all;
-    transition-property: all;
+  -webkit-filter: brightness(105%);
+  filter: brightness(105%);
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 
 /* Approximated media query for mobile view styling */
 @media (max-width: 500px) {
-    /* Top nav styles */
+  /* Top nav styles */
 
-    .top-nav__menu__item {
-        width: 25%;
-    }
+  .top-nav__menu__item {
+    width: 25%;
+  }
 
-    /* Common page styles */
+  /* Common page styles */
 
-    .home__header-image, 
-    .about__header-image,
-    .cookies__header-image,
-    .weddings__header-image,
-    .catering__header-image {
-        margin-top: 50px;
-    }
+  .home__intro__image,
+  .about__intro__image,
+  .cookies__intro__image,
+  .weddings__intro__image,
+  .catering__intro__image {
+    margin-top: 50px;
+  }
 
-    .home__intro, 
-    .about__intro,
-    .cookies__intro,
-    .weddings__intro,
-    .catering__intro,
-    .contact__intro {
-        margin-bottom: 45px;
-    }
+  .home__intro__text,
+  .about__intro__text,
+  .cookies__intro__text,
+  .weddings__intro__text,
+  .catering__intro__text,
+  .contact__intro__text {
+    margin-bottom: 45px;
+  }
 
-    .home__featured,
-    .about__our-bakers__bakers-info,
-    .cookies__type,
-    .weddings__treat-package {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        margin: 10px auto 37.5px;
-    }
+  .home__featured,
+  .about__our-bakers__bakers-info,
+  .cookies__type,
+  .weddings__treat-package {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 10px auto 37.5px;
+  }
 
-    .home__featured:nth-child(odd), 
-    .about__our-bakers__bakers-info:nth-child(odd),
-    .cookies__type:nth-child(even),
-    .weddings__treat-package:nth-child(odd) {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-            -ms-flex-direction: column-reverse;
-                flex-direction: column-reverse;
-    }
+  .home__featured:nth-child(even),
+  .about__our-bakers__bakers-info:nth-child(odd),
+  .cookies__type:nth-child(odd),
+  .weddings__treat-package:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
 
-    .home__featured__image > img, 
-    .about__our-bakers__bakers-info__image > img,
-    .cookies__type__image > img,
-    .weddings__treat-package__image > img {
-        display: block;
-        margin: 0 auto;
-    }
+  .home__featured__image > img,
+  .about__our-bakers__bakers-info__image > img,
+  .cookies__type__image > img,
+  .weddings__treat-package__image > img {
+    display: block;
+    margin: 0 auto;
+  }
 
-    .home__featured__image, .home__featured__text,
-    .about__our-bakers__bakers-info__image, .about__our-bakers__bakers-info__text,
-    .cookies__type__image, .cookies__type__text,
-    .weddings__treat-package__image, .weddings__treat-package__text {
-        width: 100%;
-        margin: 10px auto;
-    }
+  .home__featured__image,
+  .home__featured__text,
+  .about__our-bakers__bakers-info__image,
+  .about__our-bakers__bakers-info__text,
+  .cookies__type__image,
+  .cookies__type__text,
+  .weddings__treat-package__image,
+  .weddings__treat-package__text {
+    width: 100%;
+    margin: 10px auto;
+  }
 
-    /* Home page styles */
+  /* Home page styles */
 
-    .home__contact {
-        margin: 30px 0 15px;
-    }
+  .home__contact {
+    margin: 30px 0 15px;
+  }
 
-    /* About page styles */
+  /* About page styles */
 
-    .about__our-bakers {
-        margin: 37.5px auto 50px;
-    }
+  .about__our-bakers {
+    margin: 37.5px auto 50px;
+  }
 
-    .about__our-bakers__heading {
-        margin: 20px 0 10px;
-    }
+  .about__our-bakers__heading {
+    margin: 20px 0 10px;
+  }
 
-    /* Weddings page styles */
+  /* Weddings page styles */
 
-    .weddings__cakes__heading {
-        font-size: 3.5rem;
-    }
+  .weddings__cakes__heading {
+    font-size: 3.5rem;
+  }
 
-    /* Catering page styles */
+  /* Catering page styles */
 
-    .catering__package__text__header {
-        font-size: 2.75rem;
-    }
+  .catering__package__text__header {
+    font-size: 2.75rem;
+  }
 
-    .catering__package__text__menu__item {
-        line-height: 1.2;
-        padding: 7.5px 0 7.5px;
-        margin-left: 12.5%;
-    }
+  .catering__package__text__menu__item {
+    line-height: 1.2;
+    padding: 7.5px 0 7.5px;
+    margin-left: 12.5%;
+  }
 
-    /* Contact page styles */
+  /* Contact page styles */
 
-    .contact__form__header {
-        margin-bottom: 37.5px;
-    }
+  .contact__form__header {
+    margin-bottom: 37.5px;
+  }
 
-    .contact__form__buttons {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column
-    }
+  .contact__form__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 
-    .contact__form__buttons > * {
-        width: 100%;
-        font-weight: bold;
-        margin: 7.5px 0;
-    }
+  .contact__form__buttons > * {
+    width: 100%;
+    font-weight: bold;
+    margin: 7.5px 0;
+  }
 }

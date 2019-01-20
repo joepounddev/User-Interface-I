@@ -5,81 +5,136 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="images/logo-icon.ico">
-        <link href="https://fonts.googleapis.com/css?family=Gaegu%7CRoboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gaegu%7CRoboto"
+            rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
     </head>
     <body>
         <div class="page-container">
-            <nav class="top-nav">
-                <h2 class="outliner-aid">Page Navigation</h2>
-                <div class="top-nav__name"><a href="index.html">Sweet Eats Bakery</a></div>
-                <ul class="top-nav__menu">
-                    <li class="top-nav__menu__item"><a href="about.html">About</a></li>
-                    <li class="top-nav__menu__item"><a href="#">Cookies</a></li>
-                    <li class="top-nav__menu__item"><a href="weddings.html">Weddings</a></li>
-                    <li class="top-nav__menu__item"><a href="catering.html">Catering</a></li>
-                    <li class="top-nav__menu__item"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <header>
+                <h1 class="site__name"><a href="index.html">Sweet Eats Bakery</a></h1>
+                <nav class="top-nav">
+                    <h2 class="outliner-aid">Site Navigation</h2>
+                    <ul class="top-nav__menu">
+                        <li class="top-nav__menu__item"><a href="about.html">About</a></li>
+                        <li class="top-nav__menu__item"><a href="#">Cookies</a></li>
+                        <li class="top-nav__menu__item"><a href="weddings.html">Weddings</a></li>
+                        <li class="top-nav__menu__item"><a href="catering.html">Catering</a></li>
+                        <li class="top-nav__menu__item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
             <main class="cookies">
-                <div class="cookies__header-image">
-                    <img src="images/cookies/main-header.png" alt="">
-                </div>
                 <header class="cookies__intro">
-                    <h1 class="cookies__intro__heading">Our Cookie Treats</h1>
-                    <p class="cookies__intro__text">Pellentesque aliquam neque nec nisi tristique, vel egestas elit suscipit. Vestibulum condimentum, massa at congue auctor, elit justo sodales mauris, sit amet consectetur erat diam id sapien.</p>
+                    <div class="cookies__intro__image">
+                        <img src="images/cookies/main-header.png" alt="">
+                    </div>
+                    <div class="cookies__intro__text">
+                        <h2 class="cookies__intro__text__heading">Our Cookie
+                            Treats</h2>
+                        <p class="cookies__intro__text__desc">Pellentesque
+                            aliquam neque nec nisi tristique, vel egestas elit
+                            suscipit. Vestibulum condimentum, massa at congue
+                            auctor, elit justo sodales mauris, sit amet
+                            consectetur erat diam id sapien.</p>
+                    </div>
                 </header>
-                <article class="cookies__type">
-                    <div class="cookies__type__text">
-                        <h2 class="cookies__type__text__heading">Cookie chips (original taste)</h2>
-                        <p class="cookies__type__text__desc">In elementum, tellus ac convallis blandit, ipsum ex consequat risus, at malesuada nibh diam ut risus.</p>
-                        <p class="cookies__type__text__desc">Cras lorem nunc, venenatis eu pellentesque sed, faucibus eu urna. Aenean arcu nisi, sodales nec imperdiet nec, ullamcorper eu odio.</p>
-                    </div>
-                    <div class="cookies__type__image">
-                        <img src="images/cookies/original-cookie-chips.png" alt="Original cookie chips">
-                    </div>
-                </article>
-                <article class="cookies__type">
-                    <div class="cookies__type__image">
-                        <img src="images/cookies/sweet-eats-special.png" alt="Sweet Eats Special">
-                    </div>
-                    <div class="cookies__type__text">
-                        <h2 class="cookies__type__text__heading">Sweet Eats Special</h2>
-                        <p class="cookies__type__text__desc">Curabitur eu purus commodo, vulputate velit vel, feugiat nisl. Aliquam lectus ex, vulputate pellentesque aliquet in, aliquet euismod est.</p>
-                        <p class="cookies__type__text__desc">Nulla malesuada ex eu felis tempor, eget imperdiet augue interdum.</p>
-                    </div>
-                </article>
-                <article class="cookies__type">
-                    <div class="cookies__type__text">
-                        <h2 class="cookies__type__text__heading">Cherry On Top</h2>
-                        <p class="cookies__type__text__desc">In elementum, tellus ac convallis blandit, ipsum ex consequat risus, at malesuada nibh diam ut risus.</p>
-                        <p class="cookies__type__text__desc">Cras lorem nunc, venenatis eu pellentesque sed, faucibus eu urna. Aenean arcu nisi, sodales nec imperdiet nec, ullamcorper eu odio.</p>
-                    </div>
-                    <div class="cookies__type__image">
-                        <img src="images/cookies/cherry-on-top.png" alt="Cherry On Top">
-                    </div>
-                </article>
-                <article class="cookies__type">
-                    <div class="cookies__type__image">
-                        <img src="images/cookies/dark-chocolate-cookies.png" alt="Dark chocolate cookies">
-                    </div>
-                    <div class="cookies__type__text">
-                        <h2 class="cookies__type__text__heading">Dark chocolate cookies</h2>
-                        <p class="cookies__type__text__desc">Aenean semper vel ligula in elementum. Praesent tempus elementum dictum. Curabitur venenatis neque a eleifend tincidunt.</p>
-                        <p class="cookies__type__text__desc">Vestibulum turpis nulla, blandit ut eleifend a, pulvinar sed metus.</p>
-                    </div>
-                </article>
+                <section>
+                    <h2 class="outliner-aid">Featured Cookies</h2>
+                    <article class="cookies__type">
+                        <div class="cookies__type__text">
+                            <h3 class="cookies__type__text__heading">Cookie
+                                chips
+                                (original taste)</h3>
+                            <p class="cookies__type__text__desc">In elementum,
+                                tellus ac convallis blandit, ipsum ex consequat
+                                risus, at malesuada nibh diam ut risus.</p>
+                            <p class="cookies__type__text__desc">Cras lorem
+                                nunc,
+                                venenatis eu pellentesque sed, faucibus eu urna.
+                                Aenean arcu nisi, sodales nec imperdiet nec,
+                                ullamcorper eu odio.</p>
+                        </div>
+                        <div class="cookies__type__image">
+                            <img src="images/cookies/original-cookie-chips.png"
+                                alt="Original cookie chips">
+                        </div>
+                    </article>
+                    <article class="cookies__type">
+                        <div class="cookies__type__image">
+                            <img src="images/cookies/sweet-eats-special.png"
+                                alt="Sweet Eats Special">
+                        </div>
+                        <div class="cookies__type__text">
+                            <h3 class="cookies__type__text__heading">Sweet Eats
+                                Special</h3>
+                            <p class="cookies__type__text__desc">Curabitur eu
+                                purus
+                                commodo, vulputate velit vel, feugiat nisl.
+                                Aliquam
+                                lectus ex, vulputate pellentesque aliquet in,
+                                aliquet euismod est.</p>
+                            <p class="cookies__type__text__desc">Nulla malesuada
+                                ex
+                                eu felis tempor, eget imperdiet augue interdum.</p>
+                        </div>
+                    </article>
+                    <article class="cookies__type">
+                        <div class="cookies__type__text">
+                            <h3 class="cookies__type__text__heading">Cherry On
+                                Top</h3>
+                            <p class="cookies__type__text__desc">In elementum,
+                                tellus ac convallis blandit, ipsum ex consequat
+                                risus, at malesuada nibh diam ut risus.</p>
+                            <p class="cookies__type__text__desc">Cras lorem
+                                nunc,
+                                venenatis eu pellentesque sed, faucibus eu urna.
+                                Aenean arcu nisi, sodales nec imperdiet nec,
+                                ullamcorper eu odio.</p>
+                        </div>
+                        <div class="cookies__type__image">
+                            <img src="images/cookies/cherry-on-top.png"
+                                alt="Cherry
+                                On Top">
+                        </div>
+                    </article>
+                    <article class="cookies__type">
+                        <div class="cookies__type__image">
+                            <img src="images/cookies/dark-chocolate-cookies.png"
+                                alt="Dark chocolate cookies">
+                        </div>
+                        <div class="cookies__type__text">
+                            <h3 class="cookies__type__text__heading">Dark
+                                chocolate
+                                cookies</h3>
+                            <p class="cookies__type__text__desc">Aenean semper
+                                vel
+                                ligula in elementum. Praesent tempus elementum
+                                dictum. Curabitur venenatis neque a eleifend
+                                tincidunt.</p>
+                            <p class="cookies__type__text__desc">Vestibulum
+                                turpis
+                                nulla, blandit ut eleifend a, pulvinar sed
+                                metus.</p>
+                        </div>
+                    </article>
+                </section>
             </main>
         </div>
         <footer class="footer">
             <div class="footer__text">
-                <div class="footer__text__heading"><a href="index.html">Sweet Eats Bakery</a></div>
+                <div class="footer__text__heading"><a href="index.html">Sweet
+                        Eats Bakery</a></div>
                 <ul class="footer__text__nav-menu">
-                    <li class="footer__text__nav-menu__item"><a href="about.html">About</a></li>
+                    <li class="footer__text__nav-menu__item"><a
+                            href="about.html">About</a></li>
                     <li class="footer__text__nav-menu__item"><a href="#">Cookies</a></li>
-                    <li class="footer__text__nav-menu__item"><a href="weddings.html">Weddings</a></li>
-                    <li class="footer__text__nav-menu__item"><a href="catering.html">Catering</a></li>
-                    <li class="footer__text__nav-menu__item"><a href="contact.html">Contact</a></li>
+                    <li class="footer__text__nav-menu__item"><a
+                            href="weddings.html">Weddings</a></li>
+                    <li class="footer__text__nav-menu__item"><a
+                            href="catering.html">Catering</a></li>
+                    <li class="footer__text__nav-menu__item"><a
+                            href="contact.html">Contact</a></li>
                 </ul>
                 <div class="footer__text__copyright">&copy; Sweet Eats 2018</div>
             </div>
