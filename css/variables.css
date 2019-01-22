@@ -1,32 +1,32 @@
 :root {
-    /* Global font assignments */
-    --body-font-family: "Roboto";
-    --heading-font-family: "Gaegu", cursive;
-    
-    /* Global color assignments */
-    --body-font-color: var(--thunder);
-    --dashed-border-separator-color: var(--black);
+  /* Global font assignments */
+  --body-font-family: "Roboto";
+  --heading-font-family: "Gaegu", cursive;
 
-    /* Top nav color assignments */
-    --top-nav-link-bg-color: var(--tickle-me-pink);
-    --top-nav-link-font-color: var(--white);
-    --top-nav-link-border-color: var(--lightgrey);
+  /* Global color assignments */
+  --body-font-color: var(--thunder);
+  --dashed-border-separator-color: var(--black);
 
-    /* Footer color assignments */
-    --footer-bg-color: var(--tickle-me-pink);
-    --footer-border-color: var(--white);
-    --footer-link-font-color: var(--black);
+  /* Top nav color assignments */
+  --top-nav-link-bg-color: var(--tickle-me-pink);
+  --top-nav-link-font-color: var(--white);
+  --top-nav-link-border-color: var(--lightgrey);
 
-    /* Contact color assignments */
-    --contact-form-btn-bg-color: var(--tickle-me-pink);
-    --contact-form-btn-font-color: var(--white);
-    --contact-form-btn-border-color: var(--tickle-me-pink);
+  /* Footer color assignments */
+  --footer-bg-color: var(--tickle-me-pink);
+  --footer-border-color: var(--white);
+  --footer-link-font-color: var(--black);
 
-    /* Color values */
-    --thunder: #3C373B;
-    --black: #000000;
-    --tickle-me-pink: #F87B99;
-    --white: #FFFFFF;
-    --lightgrey: #D3D3D3;
-    --guardsman-red: #d10000;
+  /* Contact color assignments */
+  --contact-form-btn-bg-color: var(--tickle-me-pink);
+  --contact-form-btn-font-color: var(--white);
+  --contact-form-btn-border-color: var(--tickle-me-pink);
+
+  /* Color values */
+  --thunder: #3c373b;
+  --black: #000000;
+  --tickle-me-pink: #f87b99;
+  --white: #ffffff;
+  --lightgrey: #d3d3d3;
+  --guardsman-red: #d10000;
 }
