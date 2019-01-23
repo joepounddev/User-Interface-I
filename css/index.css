@@ -86,7 +86,8 @@ img {
 }
 
 /* Contains transitions for color change and scale-down effects */
-.top-nav__menu__item > a, .top-nav__menu__item--active > span {
+.top-nav__menu__item > a,
+.top-nav__menu__item--active > span {
   display: inline-block;
   width: 100%;
   background-color: var(--top-nav-link-bg-color);
@@ -127,6 +128,7 @@ img {
   -webkit-transition-duration: 250ms;
   transition-duration: 250ms;
   -webkit-transition-property: all;
+  transition-property: all;
   -webkit-animation: flash 0.5s;
   animation: flash 0.5s;
 }
