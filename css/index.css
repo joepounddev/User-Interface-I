@@ -96,12 +96,13 @@ img {
   padding: 20px 0;
   border: 1px solid var(--top-nav-link-border-color);
   border-radius: 20px;
-  -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
-  -webkit-transition-property: background-color, color, -webkit-transform;
-  transition-property: background-color, color, -webkit-transform;
-  transition-property: background-color, color, transform;
-  transition-property: background-color, color, transform, -webkit-transform;
+  -webkit-transition: background-color 250ms, color 250ms,
+    -webkit-transform 250ms;
+  transition: background-color 250ms, color 250ms, -webkit-transform 250ms;
+  /* autoprefixer: ignore next */
+  transition: background-color 250ms, color 250ms, transform 250ms;
+  transition: background-color 250ms, color 250ms, transform 250ms,
+    -webkit-transform 250ms;
 }
 
 .top-nav__menu__item--active > span {
@@ -116,21 +117,17 @@ img {
   color: var(--top-nav-link-bg-color);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  -webkit-transition-duration: 500ms;
-  transition-duration: 500ms;
-  -webkit-transition-property: all;
-  transition-property: all;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 /* Changes border appearance and fires the "flash" keyframe-based animation */
 .top-nav__menu__item > a:active {
   border: 1px dotted var(--top-nav-link-bg-color);
-  -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
-  -webkit-transition-property: all;
-  transition-property: all;
   -webkit-animation: flash 0.5s;
   animation: flash 0.5s;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
 }
 
 /* Footer styles */
@@ -460,21 +457,18 @@ img {
   border-color: var(--contact-form-btn-border-color);
   border-radius: 2.5px;
   margin-right: 5%;
-  -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
-  -webkit-transition-property: -webkit-filter;
-  transition-property: -webkit-filter;
-  transition-property: filter;
-  transition-property: filter, -webkit-filter;
+  -webkit-transition: -webkit-filter 250ms;
+  transition: -webkit-filter 250ms;
+  /* autoprefixer: ignore next */
+  transition: filter 250ms;
+  transition: filter 250ms, -webkit-filter 250ms;
 }
 
 .contact__form__buttons > *:hover {
   -webkit-filter: brightness(105%);
   filter: brightness(105%);
-  -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
-  -webkit-transition-property: all;
-  transition-property: all;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
 }
 
 /* Approximated media query for mobile view styling */
