@@ -26,6 +26,12 @@ img {
   color: var(--body-font-color);
 }
 
+input:focus,
+textarea:focus,
+button:focus {
+  outline-color: var(--input-focus-outline-color);
+}
+
 /* Heading tag elements with this class are used inside some semantic elements 
    to prevent HTML5 outlines from showing an "Untitled Section" */
 .outliner-aid {
