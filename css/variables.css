@@ -2,11 +2,12 @@
   /* Global font assignments */
   --body-font-family: "Roboto";
   --heading-font-family: "Gaegu", cursive;
-  --input-focus-outline-color: var(--tickle-me-pink);
 
   /* Global color assignments */
   --body-font-color: var(--thunder);
+  --input-focus-outline-color: var(--tickle-me-pink);
   --dashed-border-separator-color: var(--black);
+
 
   /* Top nav color assignments */
   --top-nav-link-bg-color: var(--tickle-me-pink);
