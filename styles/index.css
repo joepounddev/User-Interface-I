@@ -1,6 +1,6 @@
-@import "reset.css";
-@import "variables.css";
-@import "animations.css";
+@import 'reset.css';
+@import 'variables.css';
+@import 'animations.css';
 
 /* Global styles */
 
@@ -64,16 +64,16 @@ button:focus {
   cursor: pointer;
 }
 
-.site__name > a {
+.site__name__link {
   text-decoration: none;
 }
 
 /* Hover and active styling included to indicate that the element is clickable */
-.site__name > a:hover {
+.site__name__link:hover {
   outline: 2.5px dashed var(--top-nav-link-bg-color);
 }
 
-.site__name > a:active {
+.site__name__link:active {
   outline-style: dotted;
 }
 
@@ -92,8 +92,8 @@ button:focus {
 }
 
 /* Contains transitions for color change and scale-down effects */
-.top-nav__menu__item > a,
-.top-nav__menu__item--active > span {
+.top-nav__menu__item__link,
+.top-nav__menu__item__link--active {
   display: inline-block;
   width: 100%;
   background-color: var(--top-nav-link-bg-color);
@@ -105,20 +105,22 @@ button:focus {
   -webkit-transition: background-color 250ms, color 250ms,
     -webkit-transform 250ms;
   transition: background-color 250ms, color 250ms, -webkit-transform 250ms;
+  /* stylelint-disable comment-empty-line-before */
   /* autoprefixer: ignore next */
+  /* stylelint-enable */
   transition: background-color 250ms, color 250ms, transform 250ms;
   transition: background-color 250ms, color 250ms, transform 250ms,
     -webkit-transform 250ms;
 }
 
-.top-nav__menu__item--active > span {
+.top-nav__menu__item__link--active {
   background-color: var(--top-nav-link-font-color);
   color: var(--top-nav-link-bg-color);
   border: 1px solid var(--top-nav-link-bg-color);
 }
 
 /* Contains transitions for color change and scale-up effects */
-.top-nav__menu__item > a:hover {
+.top-nav__menu__item__link:hover {
   background-color: var(--top-nav-link-font-color);
   color: var(--top-nav-link-bg-color);
   -webkit-transform: scale(1.1);
@@ -128,7 +130,7 @@ button:focus {
 }
 
 /* Changes border appearance and fires the "flash" keyframe-based animation */
-.top-nav__menu__item > a:active {
+.top-nav__menu__item__link:active {
   border: 1px dotted var(--top-nav-link-bg-color);
   -webkit-animation: flash 0.5s;
   animation: flash 0.5s;
@@ -158,7 +160,7 @@ button:focus {
   cursor: pointer;
 }
 
-.footer__text__heading > a {
+.footer__text__heading__link {
   text-decoration: none;
 }
 
@@ -326,7 +328,7 @@ button:focus {
   width: 50%;
 }
 
-.weddings__cakes__gallery__images > img {
+.weddings__cakes__gallery__images__img {
   display: block;
   padding: 0 5px;
   margin: 0 auto;
@@ -440,11 +442,11 @@ button:focus {
   height: 100px;
 }
 
-.contact__form__name__label:after,
-.contact__form__email__label:after,
-.contact__form__subject__label:after,
-.contact__form__message__label:after {
-  content: "*";
+.contact__form__name__label::after,
+.contact__form__email__label::after,
+.contact__form__subject__label::after,
+.contact__form__message__label::after {
+  content: '*';
   color: red;
   margin-left: 5px;
 }
@@ -465,7 +467,9 @@ button:focus {
   margin-right: 5%;
   -webkit-transition: -webkit-filter 250ms;
   transition: -webkit-filter 250ms;
+  /* stylelint-disable comment-empty-line-before */
   /* autoprefixer: ignore next */
+  /* stylelint-enable */
   transition: filter 250ms;
   transition: filter 250ms, -webkit-filter 250ms;
 }
@@ -525,10 +529,10 @@ button:focus {
     flex-direction: column-reverse;
   }
 
-  .home__featured__image > img,
-  .about__our-bakers__bakers-info__image > img,
-  .cookies__type__image > img,
-  .weddings__treat-package__image > img {
+  .home__featured__image__img,
+  .about__our-bakers__bakers-info__image__img,
+  .cookies__type__image__img,
+  .weddings__treat-package__image__img {
     display: block;
     margin: 0 auto;
   }
