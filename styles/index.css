@@ -451,7 +451,8 @@ button:focus {
   margin-left: 5px;
 }
 
-.contact__form__buttons > * {
+.contact__form__buttons__submit-btn,
+.contact__form__buttons__reset-btn {
   width: 125px;
   background-color: var(--contact-form-btn-bg-color);
   font-family: var(--body-font-family);
@@ -474,7 +475,8 @@ button:focus {
   transition: filter 250ms, -webkit-filter 250ms;
 }
 
-.contact__form__buttons > *:hover {
+.contact__form__buttons__submit-btn:hover,
+.contact__form__buttons__reset-btn:hover {
   -webkit-filter: brightness(105%);
   filter: brightness(105%);
   -webkit-transition: all 250ms;
@@ -599,7 +601,8 @@ button:focus {
     flex-direction: column;
   }
 
-  .contact__form__buttons > * {
+  .contact__form__buttons__submit-btn,
+  .contact__form__buttons__reset-btn {
     width: 100%;
     font-weight: bold;
     margin: 7.5px 0;
