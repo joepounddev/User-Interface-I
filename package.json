@@ -1,0 +1,20 @@
+{
+  "name": "user-interface-i",
+  "description": "A sample web site for a fictional company named Sweet Eats Bakery.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joepound/User-Interface-I.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joepound/User-Interface-I/issues"
+  },
+  "homepage": "https://github.com/joepound/User-Interface-I#readme",
+  "devDependencies": {
+    "htmlhint": "^0.11.0",
+    "prettier": "^1.18.2",
+    "stylelint": "^10.1.0",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-config-standard": "^19.0.0"
+  }
+}
