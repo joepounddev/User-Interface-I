@@ -52,16 +52,11 @@ button:focus {
   margin: 0 auto;
 }
 
-.site__name,
-.site__name--active {
+.site__name {
   text-align: center;
   font-family: var(--heading-font-family);
   font-size: 6rem;
   margin: 20px 0;
-}
-
-.site__name--active {
-  cursor: pointer;
 }
 
 .site__name__link {
@@ -77,23 +72,33 @@ button:focus {
   outline-style: dotted;
 }
 
-/* Top nav styles */
+.site__name--active {
+  text-align: center;
+  font-family: var(--heading-font-family);
+  font-size: 6rem;
+  margin: 20px 0;
+}
 
-.top-nav__menu {
+.site__name--active__link {
+  cursor: pointer;
+}
+
+/* Header styles */
+
+.header__top-nav__menu {
   text-align: center;
   font-size: 1.6rem;
   margin: 0 auto;
 }
 
-.top-nav__menu__item {
+.header__top-nav__menu__item {
   display: inline-block;
   width: 15%;
   margin: 0 2% 20px 2%;
 }
 
 /* Contains transitions for color change and scale-down effects */
-.top-nav__menu__item__link,
-.top-nav__menu__item__link--active {
+.header__top-nav__menu__item__link {
   display: inline-block;
   width: 100%;
   background-color: var(--top-nav-link-bg-color);
@@ -105,22 +110,15 @@ button:focus {
   -webkit-transition: background-color 250ms, color 250ms,
     -webkit-transform 250ms;
   transition: background-color 250ms, color 250ms, -webkit-transform 250ms;
-  /* stylelint-disable comment-empty-line-before */
+  /* stylelint-disable-next-line comment-empty-line-before */
   /* autoprefixer: ignore next */
-  /* stylelint-enable */
   transition: background-color 250ms, color 250ms, transform 250ms;
   transition: background-color 250ms, color 250ms, transform 250ms,
     -webkit-transform 250ms;
 }
 
-.top-nav__menu__item__link--active {
-  background-color: var(--top-nav-link-font-color);
-  color: var(--top-nav-link-bg-color);
-  border: 1px solid var(--top-nav-link-bg-color);
-}
-
 /* Contains transitions for color change and scale-up effects */
-.top-nav__menu__item__link:hover {
+.header__top-nav__menu__item__link:hover {
   background-color: var(--top-nav-link-font-color);
   color: var(--top-nav-link-bg-color);
   -webkit-transform: scale(1.1);
@@ -130,12 +128,23 @@ button:focus {
 }
 
 /* Changes border appearance and fires the "flash" keyframe-based animation */
-.top-nav__menu__item__link:active {
+.header__top-nav__menu__item__link:active {
   border: 1px dotted var(--top-nav-link-bg-color);
   -webkit-animation: flash 0.5s;
   animation: flash 0.5s;
   -webkit-transition: all 250ms;
   transition: all 250ms;
+}
+
+.header__top-nav__menu__item__link--active {
+  display: inline-block;
+  width: 100%;
+  background-color: var(--top-nav-link-font-color);
+  color: var(--top-nav-link-bg-color);
+  text-decoration: none;
+  padding: 20px 0;
+  border: 1px solid var(--top-nav-link-bg-color);
+  border-radius: 20px;
 }
 
 /* Footer styles */
@@ -157,11 +166,18 @@ button:focus {
   font-family: var(--heading-font-family);
   font-size: 3rem;
   margin: 20px 0;
-  cursor: pointer;
 }
 
 .footer__text__heading__link {
+  cursor: pointer;
   text-decoration: none;
+}
+
+.footer__text__heading--active {
+  font-family: var(--heading-font-family);
+  font-size: 3rem;
+  cursor: pointer;
+  margin: 20px 0;
 }
 
 .footer__text__nav-menu {
@@ -397,8 +413,21 @@ button:focus {
   margin: 25px auto;
 }
 
-.contact__form > * {
+.contact__form__name,
+.contact__form__email,
+.contact__form__subject,
+.contact__form__message,
+.contact__form__buttons {
   margin: 10px 0;
+}
+
+.contact__form__name__label::after,
+.contact__form__email__label::after,
+.contact__form__subject__label::after,
+.contact__form__message__label::after {
+  content: '*';
+  color: red;
+  margin-left: 5px;
 }
 
 .contact__form > * > *,
@@ -426,7 +455,8 @@ button:focus {
   justify-content: space-between;
 }
 
-.contact__form__name__sections > * {
+.contact__form__name__sections__firstname,
+.contact__form__name__sections__lastname {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -442,15 +472,7 @@ button:focus {
   height: 100px;
 }
 
-.contact__form__name__label::after,
-.contact__form__email__label::after,
-.contact__form__subject__label::after,
-.contact__form__message__label::after {
-  content: '*';
-  color: red;
-  margin-left: 5px;
-}
-
+/* Contains transitions for color change effects */
 .contact__form__buttons__submit-btn,
 .contact__form__buttons__reset-btn {
   width: 125px;
@@ -468,13 +490,13 @@ button:focus {
   margin-right: 5%;
   -webkit-transition: -webkit-filter 250ms;
   transition: -webkit-filter 250ms;
-  /* stylelint-disable comment-empty-line-before */
+  /* stylelint-disable-next-line comment-empty-line-before */
   /* autoprefixer: ignore next */
-  /* stylelint-enable */
   transition: filter 250ms;
   transition: filter 250ms, -webkit-filter 250ms;
 }
 
+/* Contains transitions for color change effects */
 .contact__form__buttons__submit-btn:hover,
 .contact__form__buttons__reset-btn:hover {
   -webkit-filter: brightness(105%);
@@ -485,9 +507,9 @@ button:focus {
 
 /* Approximated media query for mobile view styling */
 @media (max-width: 500px) {
-  /* Top nav styles */
+  /* Header styles */
 
-  .top-nav__menu__item {
+  .header__top-nav__menu__item {
     width: 25%;
   }
 
@@ -560,7 +582,7 @@ button:focus {
   /* About page styles */
 
   .about__our-bakers {
-    margin: 37.5px auto 50px;
+    margin-bottom: 50px;
   }
 
   .about__our-bakers__heading {
