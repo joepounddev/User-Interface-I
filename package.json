@@ -10,6 +10,10 @@
     "url": "https://github.com/joepound/User-Interface-I/issues"
   },
   "homepage": "https://github.com/joepound/User-Interface-I#readme",
+  "scripts": {
+    "htmlhint": "htmlhint",
+    "stylelint": "stylelint \"**/*.css\""
+  },
   "devDependencies": {
     "htmlhint": "^0.11.0",
     "prettier": "^1.18.2",
