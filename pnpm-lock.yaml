@@ -2,7 +2,7 @@ devDependencies:
   htmlhint: 0.11.0
   prettier: 1.18.2
   stylelint: 10.1.0
-  stylelint-config-prettier: 5.3.0_stylelint@10.1.0
+  stylelint-config-prettier: 6.0.0_stylelint@10.1.0
   stylelint-config-standard: 19.0.0_stylelint@10.1.0
 lockfileVersion: 5.1
 packages:
@@ -2676,7 +2676,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=
-  /stylelint-config-prettier/5.3.0_stylelint@10.1.0:
+  /stylelint-config-prettier/6.0.0_stylelint@10.1.0:
     dependencies:
       stylelint: 10.1.0
     dev: true
@@ -2687,7 +2687,7 @@ packages:
     peerDependencies:
       stylelint: ^9.1.1 || ^10.0.0 || ^11.0.0
     resolution:
-      integrity: sha512-To1lmaEYTmmGsVFSnVmU0cgXBrX4m31fm5sPgFCAH7Ep4ctdJhmTPe1aUnsZ9p2wY+SPhngqaFU5r1njaUyiaA==
+      integrity: sha512-f/BKiUAczB4KODC1w5eY6LoNgfq6QzdSnSc4ccAATKo1IfYCuG3IZwaxj/5AAxl1kyaW7kPLBOXG66O4gSIKTQ==
   /stylelint-config-recommended/3.0.0_stylelint@10.1.0:
     dependencies:
       stylelint: 10.1.0
@@ -3057,5 +3057,5 @@ specifiers:
   htmlhint: ^0.11.0
   prettier: ^1.18.2
   stylelint: ^10.1.0
-  stylelint-config-prettier: ^5.2.0
+  stylelint-config-prettier: ^6.0.0
   stylelint-config-standard: ^19.0.0
