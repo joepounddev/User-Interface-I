@@ -2,7 +2,7 @@ devDependencies:
   htmlhint: 0.11.0
   prettier: 1.19.1
   stylelint: 11.1.1
-  stylelint-config-prettier: 6.0.0_stylelint@11.1.1
+  stylelint-config-prettier: 7.0.0_stylelint@11.1.1
   stylelint-config-standard: 19.0.0_stylelint@11.1.1
 lockfileVersion: 5.1
 packages:
@@ -295,10 +295,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
-  /autoprefixer/9.7.2:
+  /autoprefixer/9.7.3:
     dependencies:
-      browserslist: 4.7.3
-      caniuse-lite: 1.0.30001012
+      browserslist: 4.8.0
+      caniuse-lite: 1.0.30001013
       chalk: 2.4.2
       normalize-range: 0.1.2
       num2fraction: 1.2.2
@@ -309,7 +309,7 @@ packages:
       node: '>=6.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-LCAfcdej1182uVvPOZnytbq61AhnOZ/4JelDaJGDeNwewyU1AMaNthcHsyz1NRjTmd2FkurMckLWfkHg3Z//KA==
+      integrity: sha512-8T5Y1C5Iyj6PgkPSFd0ODvK9DIleuPKUPYniNxybS47g2k2wFgLZ46lGQHlBuGKIAEV8fbCDfKCCRS1tvOgc3Q==
   /aws-sign2/0.7.0:
     dev: true
     resolution:
@@ -378,15 +378,15 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
-  /browserslist/4.7.3:
+  /browserslist/4.8.0:
     dependencies:
-      caniuse-lite: 1.0.30001012
-      electron-to-chromium: 1.3.314
+      caniuse-lite: 1.0.30001013
+      electron-to-chromium: 1.3.321
       node-releases: 1.1.41
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-jWvmhqYpx+9EZm/FxcZSbUZyDEvDTLDi3nSAKbzEkyWvtI0mNSmUosey+5awDW1RUlrgXbQb5A6qY1xQH9U6MQ==
+      integrity: sha512-HYnxc/oLRWvJ3TsGegR0SRL/UDnknGq2s/a8dYYEO+kOQ9m9apKoS5oiathLKZdh/e9uE+/J3j92qPlGD/vTqA==
   /cache-base/1.0.1:
     dependencies:
       collection-visit: 1.0.0
@@ -445,10 +445,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-1UVjW+HjPFQmScaRc+Xeas+uNN0=
-  /caniuse-lite/1.0.30001012:
+  /caniuse-lite/1.0.30001013:
     dev: true
     resolution:
-      integrity: sha512-7RR4Uh04t9K1uYRWzOJmzplgEOAXbfK72oVNokCdMzA67trrhPzy93ahKk1AWHiA0c58tD2P+NHqxrA8FZ+Trg==
+      integrity: sha512-hOAXaWKuq/UVFgYawxIOdPdyMQdYcwOCDOjnZcKn7wCgFUrhP7smuNZjGLuJlPSgE6aRA4cRJ+bGSrhtEt7ZAg==
   /caseless/0.12.0:
     dev: true
     resolution:
@@ -764,10 +764,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-OoOpBOVDUyh4dMVkt1SThoSamMk=
-  /electron-to-chromium/1.3.314:
+  /electron-to-chromium/1.3.321:
     dev: true
     resolution:
-      integrity: sha512-IKDR/xCxKFhPts7h+VaSXS02Z1mznP3fli1BbXWXeN89i2gCzKraU8qLpEid8YzKcmZdZD3Mly3cn5/lY9xsBQ==
+      integrity: sha512-jJy/BZK2s2eAjMPXVMSaCmo7/pSY2aKkfQ+LoAb5Wk39qAhyP9r8KU74c4qTgr9cD/lPUhJgReZxxqU0n5puog==
   /emoji-regex/7.0.3:
     dev: true
     resolution:
@@ -2189,10 +2189,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
-  /psl/1.4.0:
+  /psl/1.5.0:
     dev: true
     resolution:
-      integrity: sha512-HZzqCGPecFLyoRj5HLfuDSKYTJkAfB5thKBIkRHtGjWwY7p1dAyveIbXIq4tO0KYfDF2tHqPUgY9SDnGm00uFw==
+      integrity: sha512-4vqUjKi2huMu1OJiLhi3jN6jeeKvMZdI1tYgi/njW5zV52jNLgSAZSdN16m9bJFe61/cT8ulmw4qFitV9QRsEA==
   /punycode/1.4.1:
     dev: true
     resolution:
@@ -2686,7 +2686,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=
-  /stylelint-config-prettier/6.0.0_stylelint@11.1.1:
+  /stylelint-config-prettier/7.0.0_stylelint@11.1.1:
     dependencies:
       stylelint: 11.1.1
     dev: true
@@ -2695,9 +2695,9 @@ packages:
       npm: '>= 3'
     hasBin: true
     peerDependencies:
-      stylelint: ^9.1.1 || ^10.0.0 || ^11.0.0
+      stylelint: '>=9.1.1'
     resolution:
-      integrity: sha512-f/BKiUAczB4KODC1w5eY6LoNgfq6QzdSnSc4ccAATKo1IfYCuG3IZwaxj/5AAxl1kyaW7kPLBOXG66O4gSIKTQ==
+      integrity: sha512-qF2HcWd4QJJozdqjq/IbnoANHwP7FVRG6dqxGBKWNI/L6bdWi8aXI0hRtkkar2QjrP5riGACE2uDxfcL4AZqRA==
   /stylelint-config-recommended/3.0.0_stylelint@11.1.1:
     dependencies:
       stylelint: 11.1.1
@@ -2717,7 +2717,7 @@ packages:
       integrity: sha512-VvcODsL1PryzpYteWZo2YaA5vU/pWfjqBpOvmeA8iB2MteZ/ZhI1O4hnrWMidsS4vmEJpKtjdhLdfGJmmZm6Cg==
   /stylelint/11.1.1:
     dependencies:
-      autoprefixer: 9.7.2
+      autoprefixer: 9.7.3
       balanced-match: 1.0.0
       chalk: 2.4.2
       cosmiconfig: 5.2.1
@@ -2852,7 +2852,7 @@ packages:
       integrity: sha512-FWtleNAtZ/Ki2qtqej2CXTOayOH9bHDQF+Q48VpWyDXjbYxA4Yz8iDB31zXOBUlOHHKidDbqGVrTUvQMPmBGBw==
   /tough-cookie/2.4.3:
     dependencies:
-      psl: 1.4.0
+      psl: 1.5.0
       punycode: 1.4.1
     dev: true
     engines:
@@ -3084,5 +3084,5 @@ specifiers:
   htmlhint: ^0.11.0
   prettier: ^1.19.1
   stylelint: ^11.1.1
-  stylelint-config-prettier: ^6.0.0
+  stylelint-config-prettier: ^7.0.0
   stylelint-config-standard: ^19.0.0
