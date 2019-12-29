@@ -1,6 +1,7 @@
 {
   "name": "user-interface-i",
-  "description": "A sample web site for a fictional company named Sweet Eats Bakery.",
+  "description": "A sample web site for a fictitious company named Sweet Eats Bakery.",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joepound/User-Interface-I.git"

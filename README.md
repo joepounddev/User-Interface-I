@@ -2,7 +2,7 @@
 
 ## Content
 
-A sample web site for a fictional company named Sweet Eats Bakery.
+A sample web site for a fictitious company named Sweet Eats Bakery.
 
 ### URL
 
