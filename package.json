@@ -13,7 +13,7 @@
   "homepage": "https://joepound-ls-ui1-sweet-eats-bakery.netlify.com",
   "scripts": {
     "htmlhint": "htmlhint",
-    "prettier": "prettier --write \"**/*.css\"",
+    "prettier": "prettier --write \"**/*.json\" \"**/*.css\"",
     "stylelint": "stylelint \"**/*.css\""
   },
   "devDependencies": {
