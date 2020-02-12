@@ -3,7 +3,7 @@ devDependencies:
   prettier: 1.19.1
   stylelint: 13.0.0
   stylelint-config-prettier: 8.0.1_stylelint@13.0.0
-  stylelint-config-standard: 19.0.0_stylelint@13.0.0
+  stylelint-config-standard: 20.0.0_stylelint@13.0.0
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.5.5:
@@ -2060,7 +2060,7 @@ packages:
       stylelint: '>=10.1.0'
     resolution:
       integrity: sha512-F6yTRuc06xr1h5Qw/ykb2LuFynJ2IxkKfCMf+1xqPffkxh0S09Zc902XCffcsw/XMFq/OzQ1w54fLIDtmRNHnQ==
-  /stylelint-config-standard/19.0.0_stylelint@13.0.0:
+  /stylelint-config-standard/20.0.0_stylelint@13.0.0:
     dependencies:
       stylelint: 13.0.0
       stylelint-config-recommended: 3.0.0_stylelint@13.0.0
@@ -2068,7 +2068,7 @@ packages:
     peerDependencies:
       stylelint: '>=10.1.0'
     resolution:
-      integrity: sha512-VvcODsL1PryzpYteWZo2YaA5vU/pWfjqBpOvmeA8iB2MteZ/ZhI1O4hnrWMidsS4vmEJpKtjdhLdfGJmmZm6Cg==
+      integrity: sha512-IB2iFdzOTA/zS4jSVav6z+wGtin08qfj+YyExHB3LF9lnouQht//YyB0KZq9gGz5HNPkddHOzcY8HsUey6ZUlA==
   /stylelint/13.0.0:
     dependencies:
       autoprefixer: 9.7.3
@@ -2423,4 +2423,4 @@ specifiers:
   prettier: ^1.19.1
   stylelint: ^13.0.0
   stylelint-config-prettier: ^8.0.0
-  stylelint-config-standard: ^19.0.0
+  stylelint-config-standard: ^20.0.0
