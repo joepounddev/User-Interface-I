@@ -17,7 +17,7 @@
     "stylelint": "stylelint \"**/*.css\""
   },
   "devDependencies": {
-    "htmlhint": "^0.11.0",
+    "htmlhint": "^0.14.1",
     "prettier": "^1.19.1",
     "stylelint": "^13.0.0",
     "stylelint-config-prettier": "^8.0.0",
